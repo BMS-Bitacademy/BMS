@@ -153,7 +153,7 @@ def callback():
 #                ['오뚜기', 'onion']]
 
 batch_size, sequence_length, epochs, units, learning_rate, patience = 256, 65, 100, 512, 5e-3, 10
-
+#
 target_lsts = [['아시아종묘','potato'],['아시아종묘','price_milk'],['아시아종묘','exchangerate'],
                ['조비','carrot'],['조비','price_egg'],['조비','price_milk'],
                ['효성오앤비','carrot'],['효성오앤비','price_milk'],['효성오앤비','kospi'],
@@ -220,8 +220,10 @@ target_lsts = [['아시아종묘','potato'],['아시아종묘','price_milk'],['�
 #                ['CJ제일제당', 'price_milk'], ['CJ제일제당', 'price_sugar'],['CJ제일제당', 'exchangerate'],
 #                ['삼양식품'],['삼양식품', 'price_egg'], ['삼양식품', 'price_milk']]
 
+
 # # batch_size=256, sequence_length=65, epochs=100, units=512, RMSprop(lr=1=1e-3), patience=10
 # batch_size, sequence_length, epochs, units, learning_rate, patience = 256, 65, 100, 512, 1e-3, 10
+#
 
 # target_lsts = [['조비','carrot'],['조비','price_egg'],['조비','price_milk'],
 #                ['효성오앤비','carrot'],['효성오앤비','price_milk'],['효성오앤비','kospi'],
@@ -236,6 +238,9 @@ target_lsts = [['아시아종묘','potato'],['아시아종묘','price_milk'],['�
 #                ['빙그레'],['빙그레', 'cucumber'], ['빙그레', 'exchangerate'],
 #                ['매일홀딩스', 'price_egg'],['매일홀딩스', 'price_sugar'], ['매일홀딩스', 'Dubai'],
 #                ['푸드웰'], ['푸드웰', 'green_pepper'], ['푸드웰', 'red_pepper']]
+
+
+
 
 
 
