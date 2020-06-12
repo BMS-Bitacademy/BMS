@@ -1,7 +1,6 @@
-
+## BMS
 <div>
-  <img width="100" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/logo.png">
-  ## BMS
+  <img width="200" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/logo.png">
 </div>
 
 
