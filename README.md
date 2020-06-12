@@ -11,21 +11,24 @@
 
 ### 2. 팀 소개 및 역할 :two_men_holding_hands:
 <div>
-  <img width="300" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/logo.png">
+  <img width="250" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/logo.png">
 </div>
 (Bigdata Marketing Service)
 
 - 마케팅에 대해 관심도가 있어 사용자에게 예측 서비스를 제공하기 위해 만들어진 팀
 
-> **민병혁**(팀장) : Web Service 구현
+> **민병혁**(팀장)
+- Web Service 구현
 
-> **최현수**(팀원) : Data 수집 및 적재
+> **최현수**(팀원)
+- Data 수집 및 적재
 
-> **권태양**(팀원) : Data 처리 및 분석
+> **권태양**(팀원)
+- Data 처리 및 분석
 
 ### 3. 시스템 구성도
 <div>
-  <img width="600" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/시스템 구성도.png">
+  <img width="800" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/시스템 구성도.png">
 </div>
 
 ### 4. 구현 과정
