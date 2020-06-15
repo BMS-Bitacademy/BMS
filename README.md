@@ -35,6 +35,8 @@
 
 #### 1) 데이터 수집
 - **Python 라이브러리 Selenium, Beautiful soup을 이용**해 Crawling 진행
+- 수집된 데이터를 MariaDB에 적재
+- 
 - 출처
   - [농산물](https://www.garak.co.kr) / [주식](https://finance.naver.com) / [환율, 코스피](https://kr.investing.com) / [우유](https://www.atfis.or.kr) / [원유](http://www.opinet.co.kr) / [계란, 설탕](https://www.kamis.or.kr)
   
@@ -58,15 +60,14 @@
     - 시간 별 데이터가 아닌 일별 데이터로 주식 별 데이터의 수가 많지 않다고 판단
     - **RNN, LSTM이 아닌 `GRU`인 이유**
       - RNN  : 장기 의존성 문제(과거 데이터의 정보를 기억하는 기능이 떨어짐)
-      - LSTM : 많은 모델 학습이 필요하기 때문에 학습이 빠른 GRU 선택
-             : 소량의 데이터에 더 잘 학습되는 GRU 선택
-  - 모든 조합의 모델링 후 주식별 예측률, 수익률 비교
+      - LSTM : 많은 모델 학습이 필요하기 때문에 학습이 빠른 GRU 선택, 소량의 데이터에 더 잘 학습되는 GRU 선택
+  - **모든 조합의 모델링 후 주식별 예측률, 수익률 비교**
     - ex) 아시아종묘의 경우 우유와 모델링 했을 때 예측률이 약 60%로 가장 높은 것을 확인
 <div>
   <img width="400" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/모델비교.png">
 </div>
 
-  - **주식 별 최종 모델 학습 후 Web에 필요한 Data 생성**
+  - **주식 별 최종 모델 학습 후 예측데이터를 MariaDB에 적재**
   
 #### 3) 시각화
   - **MVC 패턴으로 Spring Boot 웹서버 구현**
