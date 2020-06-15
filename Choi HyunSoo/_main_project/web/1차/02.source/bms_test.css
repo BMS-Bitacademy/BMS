@@ -1,0 +1,48 @@
+body { text-align: center; }
+a { color: black; text-decoration:none }
+ul {margin:0;padding:0}
+
+/* header */
+.header {/*width: 100%;*/ background-image: url(images/header.jpg); background-position: center; height: 200px; margin-bottom: -120px;}
+.header .inner {height: 2.5em; text-align: left; overflow: hidden; border: 2px solid black; padding: 1em; line-height: 2em;}
+.header .logo {font-size: 3em; font-weight: bold; float: left; margin-left: 0.5em; line-height: 0.8em;}
+
+.menubox {border-color: black; float: right; font-size: 25px; font-weight: 900; margin-top: 0.1em; float:right}
+.menubox div {border: 2px solid black; border-radius: 15px; padding: 5px; float: left; margin-right: 0.5em; background-color:rgb(255, 255, 255, 0.6);}
+.menubox div:hover {transform: scale(1.05); box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);}
+
+/* contents inner */
+.inner strong {font-size: 2.5em;}
+.inner p {font-size: 1.5em; font-weight: bold; margin: 0.1em auto 0.2em;}
+.inner hr {width: 120px; border: 3px solid rgb(0, 84, 240); border-radius: 5px;}
+/*  button */
+.btn1 {background-color: rgb(0, 84, 240); border: 1px solid skyblue; border-radius: 10px; color: white; font-weight: bold; font-size: 20px; padding: 0.5em; display: inline-block;}
+.btn1:hover {transform: scale(1.05);}
+
+
+/* contents bottom */
+.bottom p {text-align: right; margin-bottom: 0;}
+.bottom {margin-top: 1em; }
+.bottom strong {font-size: 2em;  margin-bottom: 3em;}
+.bottom span {font-weight: bold; font-size: 1.4em; margin-left: 3em;}
+
+.cols {height: 40px; width: 1200px; overflow:hidden; border-top: 2px solid black; border-bottom: 2px solid black; font-size: 1.25em; margin: auto; line-height:40px;}
+.cols li {background-image: url(images/bg_col.png); background-position: center; width: 180px; display: inline-block; background-size: 9em; height: inherit; border-top: 0.5em;}
+/* .cols .col1 {background-image: url(images/bg_col.png); background-position: center; width: 180px; display: inline-block; border-radius: 200px;}
+.cols .col2 {background-color: yellow; width: 180px; display: inline-block; border-radius: 100px;}
+.cols .col3 {background-color: yellow; width: 180px; display: inline-block; border-radius: 100%;}
+.cols .col4 {background-color: yellow; width: 180px; display: inline-block;} */
+
+
+    /* transition: transform 0.2s; */
+
+.top1 {height: 70px; width: 1200px; border: 1px solid black; border-radius: 5px; margin: 0.5em auto 0;}
+.top1 ul {height: inherit; margin: 0;}
+.top1 li {display: inline-block; width:180px; height: inherit; margin-top: 0; border: 1px solid red;}
+/* .top1 .col1 {display: inline-block;}
+.top1 .col2 {display: inline-block;}
+.top1 .col3 {display: inline-block;}
+.top1 .col4 {display: inline-block;}
+.top1 .col5 {display: inline-block;}
+.top1 .col6 {display: inline-block;} */
+
