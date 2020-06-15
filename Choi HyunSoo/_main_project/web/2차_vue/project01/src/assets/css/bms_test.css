@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* font */
+/* @font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Noto Sans Thin"), local("NotoSans-Thin"), url(../../lib/fonts/NotoSansKR-Thin-Hestia.eot), url(../../lib/fonts/NotoSansKR-Thin-Hestia.eot?#iefix) format("embedded-opentype"), url(../../lib/fonts/NotoSansKR-Thin-Hestia.woff) format("woff"), url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Thin-Hestia.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Noto Sans Light"), local("NotoSans-Light"), url(../../lib/fonts/NotoSansKR-Light-Hestia.eot), url(../../lib/fonts/NotoSansKR-Light-Hestia.eot?#iefix) format("embedded-opentype"), url(../../lib/fonts/NotoSansKR-Light-Hestia.woff) format("woff"), url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Light-Hestia.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans Regular"), local("NotoSans-Regular"), url(../../lib/fonts/NotoSansKR-Regular-Hestia.eot), url(../../lib/fonts/NotoSansKR-Regular-Hestia.eot?#iefix) format("embedded-opentype"), url(../../lib/fonts/NotoSansKR-Regular-Hestia.woff) format("woff"), url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Regular-Hestia.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Noto-Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Noto Sans Medium"), local("NotoSans-Medium"), url(../../lib/fonts/NotoSansKR-Medium-Hestia.eot), url(../../lib/fonts/NotoSansKR-Medium-Hestia.eot?#iefix) format("embedded-opentype"), url(../../lib/fonts/NotoSansKR-Medium-Hestia.woff) format("woff"), url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Medium-Hestia.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url(../../lib/fonts/NotoSansKR-Bold-Hestia.eot), url(../../lib/fonts/NotoSansKR-Bold-Hestia.eot?#iefix) format("embedded-opentype"), url(../../lib/fonts/NotoSansKR-Bold-Hestia.woff) format("woff"), url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/fonts/otf/NotoSansKR-Bold-Hestia.otf) format("opentype");
+} */
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,input,button,textarea{font:/*normal 13px/1*/ 'Noto Sans' ,'Nanum Gothic' ,'돋움',Dotum, sans-serif; color:#333;/*line-height:1.4*/}
+
+body { text-align: center; }
+a { color: black; text-decoration:none }
+ul {margin:0;padding:0}
+
+/* header */
+.header {/*width: 100%;*/ background-image: url(../../images/header.jpg); background-position: center; height: 200px; margin-bottom: -120px;}
+.header .inner {height: 2.5em; text-align: left; overflow: hidden; border: 2px solid black; padding: 1em; line-height: 2em;}
+.header .logo {font-size: 3em; font-weight: bold; float: left; margin-left: 0.5em; line-height: 0.8em;}
+
+.menubox {border-color: black; float: right; font-size: 25px; font-weight: 900; margin-top: 0.1em; float:right}
+.menubox div {border: 2px solid black; border-radius: 15px; padding: 5px; float: left; margin-right: 0.5em; background-color:rgb(255, 255, 255, 0.6);}
+.menubox div:hover {transform: scale(1.05); box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);}
+
+/* contents inner */
+.inner{width:1280px;margin:0 auto;padding:0 15px}
+.inner strong {font-size: 2.5em;}
+.inner p {font-size: 1.5em; font-weight: bold; margin: 0.1em auto 0.2em;}
+.inner hr {width: 120px; border: 3px solid rgb(0, 84, 240); border-radius: 5px;}
+/*  button */
+.btn {background-color: rgb(0, 84, 240); border: 1px solid skyblue; border-radius: 10px; color: white; font-weight: bold; font-size: 20px; padding: 0.5em; display: inline-block;}
+.btn:hover {transform: scale(1.05);}
+.btn.no2 {margin-top: 10px; float: right}
+
+
+/* contents bottom */
+.bottom p {text-align: right; margin-bottom: 0;}
+.bottom {margin-top: 1em; }
+.bottom strong {font-size: 2em;  margin-bottom: 3em;}
+.bottom span {font-weight: bold; font-size: 1.4em; margin-left: 3em;}
+
+.cols {height: 40px; /*width: 1200px;*/ overflow:hidden; border-top: 2px solid black; border-bottom: 2px solid black; font-size: 1.25em; margin: auto; line-height:40px;}
+.cols li {background-image: url(../../images/bg_col.png); background-position: center; width: 180px; display: inline-block; background-size: 9em; height: inherit; border-top: 0.5em;}
+
+.stock_wrap {margin-top: 40px; padding:10px; border:1px solid #ddd; border-radius:20px; background:#fafafa;}
+.stock_wrap .cont_tit {font-weight:600; font-size:30px; text-align:center}
+.stock_wrap .date {text-align:right;}
+.stock_wrap .today {display:inline-block; padding:10px; background:#333; color:#fff; font-size:15px;}
+.stock_wrap .stock_list {margin-top:20px;/*border:1px solid #ddd;background:#fff*/}
+.stock_wrap .stock_list li {display:flex; text-align:center; font-size:14px}
+.stock_wrap .stock_list li > div {overflow:hidden; flex:1;padding:10px}
+.stock_wrap .stock_list .stock_tit {font-size: 20px;}
+.stock_wrap .stock_list .stock_tit div {background-image: url(../../images/bg_col.png); background-position: center; background-size: 80%; background-repeat: no-repeat;}
+
+.stock_wrap .stock_list .stock_info {border: 1px solid black; border-radius: 10px; margin-top: 10px; height: 50px; font-size: 20px; transition: all 0.5s;}
+.stock_wrap .stock_list .stock_info:hover {margin: 10px -10px;  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2); background:rgb(193, 209, 228)}
+
+
+.stock_wrap .stock_list .price span {padding-left:5px; font-size:12px;}
+.stock_wrap .stock_list .price span.up,
+.stock_wrap .stock_list .plus .perc {color:#0F69EF}
+.stock_wrap .stock_list .price span.down,
+.stock_wrap .stock_list .minus .perc {color:#D62C11}
+.stock_wrap .stock_list .price span.nomal,
+.stock_wrap .stock_list .nomal .perc {color:black}
+
+.stock_wrap .stock_list .perc {float:left; width:40px;}
+.stock_wrap .stock_list .graph {overflow:hidden; float:right; position:relative; top:50%; width:calc(100% - 50px); height:10px; margin-top:-5px; border-radius:50px; background:#eee}
+.stock_wrap .stock_list .graph .bar {display:block; position:absolute; top:0; left:0; width:0; height:100%; border-radius:50px; transition:width 0.3s}
+.stock_wrap .stock_list .plus .graph .bar {background:#0F69EF}
+.stock_wrap .stock_list .minus .graph .bar {background:#D62C11}
+.stock_wrap .stock_list .nomal .graph .bar {background:black}
+
+/* footer */
+#footer{width:100%;padding:20px 0;background:#444; margin-top: 80px;}
+#footer p{font-weight:300;font-size:13px;color:#ddd;text-align:right}
