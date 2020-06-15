@@ -28,7 +28,7 @@
 
 ### 3. 시스템 구성도
 <div>
-  <img width="800" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/시스템 구성도.png">
+  <img width="1000" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/시스템 구성도.png">
 </div>
 
 ### 4. 구현 과정
@@ -43,13 +43,13 @@
 > **1) 전처리**
   - 수집된 데이터를 하나의 DataFrame으로 처리
 <div>
-  <img width="500" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/데이터 합병.png">
+  <img width="600" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/데이터 합병.png">
 </div>
 
 > **2) 모델링**
-  - 각 주식 별 상관관계가 있는 변수 확인 후 모델 학습할 조합 생성
+  - **각 주식 별 상관관계가 있는 변수 확인 후 모델 학습할 조합 생성**
 <div>
-  <img width="400" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/모델 조합.png">
+  <img width="600" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/모델 조합.png">
 </div>
   
   - **`GRU`(Gated recurrent unit) 모델 선정 과정**
@@ -60,4 +60,16 @@
       - RNN  : 장기 의존성 문제(과거 데이터의 정보를 기억하는 기능이 떨어짐)
       - LSTM : 많은 모델 학습이 필요하기 때문에 학습이 빠른 GRU 선택
              : 소량의 데이터에 더 잘 학습되는 GRU 선택
+  - 모든 조합의 모델링 후 주식별 예측률, 수익률 비교
+    - ex) 아시아종묘의 경우 우유와 모델링 했을 때 예측률이 약 60%로 가장 높은 것을 확인
+<div>
+  <img width="400" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/모델비교.png">
+</div>
 
+  - **주식 별 최종 모델 학습 후 Web에 필요한 Data 생성**
+  
+#### 3) 시각화
+  - **MVC 패턴으로 Spring Boot 웹서버 구현**
+  - `JPA` : 자바 어플리케이션에서 관계형 데이터베이스를 사용하는 방식을 정의한 인터페이스
+  - `Hibernate` : JPA의 구현체이며 DB에 있는 데이터를 JAVA의 POJO로 인식하여 접근하게 해주는 역할
+  - `JDBC` : DB에 접근할 수 있도록 JAVA에서 제공하는 API
