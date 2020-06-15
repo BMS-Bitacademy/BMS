@@ -1,0 +1,7 @@
+아래 라이브러리 설치 필요
+
+- urllib3 1.25.8
+- beautifulsoup4 4.8.2
+- selenium 3.141.0
+- pymysql 0.9.3
+- requests 2.22.0
