@@ -1,4 +1,4 @@
-## BMS
+## BMS (Bigdata Marketing Service)
 
 ### 프로젝트 명 : SPC(Stock Predict Service)
   - 주가 예측 시스템 :chart_with_upwards_trend:
@@ -13,7 +13,7 @@
 <div>
   <img width="250" src="https://github.com/BMS-Bitacademy/BMS/blob/master/img/logo.png">
 </div>
-(Bigdata Marketing Service)
+
 
 - 마케팅에 대해 관심도가 있어 사용자에게 예측 서비스를 제공하기 위해 만들어진 팀
 
