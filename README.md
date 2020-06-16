@@ -36,7 +36,6 @@
 #### 1) 데이터 수집
 - **Python 라이브러리 Selenium, Beautiful soup을 이용**해 Crawling 진행
 - 수집된 데이터를 MariaDB에 적재
-- 
 - 출처
   - [농산물](https://www.garak.co.kr) / [주식](https://finance.naver.com) / [환율, 코스피](https://kr.investing.com) / [우유](https://www.atfis.or.kr) / [원유](http://www.opinet.co.kr) / [계란, 설탕](https://www.kamis.or.kr)
   
