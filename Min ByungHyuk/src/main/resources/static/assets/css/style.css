@@ -15,9 +15,10 @@ div.button input {
     font-size: 18px;
 }
 
-.custab{
+.custab {
     margin: 0;
 }
+
 .line {
     fill: none;
     stroke: steelblue;
@@ -50,6 +51,7 @@ div.button input {
 body, h1, h2, h3, h4, h5, h6, table {
     font-family: "Raleway", sans-serif
 }
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -70,7 +72,7 @@ body, h1, h2, h3, h4, h5, h6, table {
 .svg {
     text-align: center;
     margin: 20px 100px 30px 70px;
-/*op: 20, right: 20, bottom: 30, left: 40*/
+    /*op: 20, right: 20, bottom: 30, left: 40*/
 }
 
 h2 {
@@ -84,11 +86,11 @@ h2 small {
     font-size: 0.5em;
 }
 
-p {
-    font-size: 20px;
-    margin: 20px 0;
-    text-align: center;
-}
+/*p {*/
+/*    font-size: 20px;*/
+/*    margin: 20px 0;*/
+/*    text-align: center;*/
+/*}*/
 
 .responsive-table li {
     border-radius: 3px;
@@ -165,8 +167,35 @@ p {
     box-shadow: 3px 3px 0px transparent;
     transition: 0.5s;
 }
-.bh-font-12size { font-size: 12px; }
-.triangle {display:inline-block; width:0; height:0; border-style:solid; border-width:5px;}
-.triangle.test_1 {border-color:blue transparent transparent transparent;  margin: auto;}
-.triangle.test_2 {border-color:transparent transparent red transparent; margin: auto;}
 
+.bh-font-12size {
+    font-size: 12px;
+}
+
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.triangle.test_1 {
+    border-color: blue transparent transparent transparent;
+    margin: auto;
+}
+
+.triangle.test_2 {
+    border-color: transparent transparent red transparent;
+    margin: auto;
+}
+
+.rectangle {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 3px;
+    margin: auto;
+    background-color: green;
+
+}

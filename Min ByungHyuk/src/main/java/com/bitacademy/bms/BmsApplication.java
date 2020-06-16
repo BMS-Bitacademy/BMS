@@ -10,4 +10,7 @@ public class BmsApplication {
         SpringApplication.run(BmsApplication.class, args);
     }
 
+
+
 }
+

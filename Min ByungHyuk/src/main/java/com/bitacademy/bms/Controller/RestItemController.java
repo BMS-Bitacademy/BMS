@@ -24,9 +24,9 @@ public class RestItemController {
      */
     @RequestMapping(value = "/getJsonList",  produces = "application/json;charset=UTF-8")
     @ResponseBody
-    public Collection<HashMap<String, String>> getJsonList(@RequestParam(value = "name") String name)  {
+    public Collection<HashMap<String, String>> getJsonList(@RequestParam(value = "code") int code)  {
 
-        return stockSerivce.getChartDataList(name);
+        return stockSerivce.getChartDataList(code);
     }
 
 }

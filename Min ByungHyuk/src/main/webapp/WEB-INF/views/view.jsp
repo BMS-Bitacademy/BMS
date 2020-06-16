@@ -5,9 +5,9 @@
 <%@ include file="../includes/header.jsp" %>
 
 
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="assets/Library/http_ajax.aspnetcdn.com_ajax_jQuery_jquery-3.3.1.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/Library/http_cdn.datatables.net_1.10.21_css_jquery.dataTables.css">
+
 
 <div class="row">
     <div class="container">
@@ -22,7 +22,7 @@
                         <th class="text-center">익일예측</th>
                         <th class="text-center">예측등락률</th>
                         <th class="text-center">등락적중률</th>
-                        <th class="text-center" title="3개월전 종가에서 90일 기준으로 투자를 진행한 경우">*최근3개월수익율</th>
+                        <th class="text-center" title="최근 3개월 기준으로 투자를 진행한 경우">*최근3개월수익율</th>
                         <th class="text-center">평균오차범위</th>
                     </tr>
                     </thead>
@@ -31,7 +31,8 @@
                         <%--주식명--%>
                         <tr>
                             <td style="cursor:pointer;" class="text-center text-primary" width="165"
-                                onClick=" location.href='/get?name=<c:out value="${item.com_name}"/>'">
+<%--                                onClick=" location.href='/get?name=<c:out value="${item.com_name}"/>'">--%>
+                                onClick=" location.href='/get?code=<c:out value="${item.com_code}"/>'">
                                 <c:out value="${item.com_name}"/>
                             </td>
                                 <%--금일종가
@@ -48,7 +49,7 @@
                             </c:if>
                             <c:if test="${item.tod_status == 0}">
                                 <td class="text-center" style="word-break:break-all">
-                                    <fmt:formatNumber value="${item.tod_price}"/>
+                                    <fmt:formatNumber value="${item.tod_price}"/><span class="rectangle NO1"></span>
                                 </td>
                             </c:if>
                                 <%--익일예측--%>
@@ -74,6 +75,7 @@
                             <c:if test="${item.tom_status == 0}">
                                 <td class="text-center" style="word-break:break-all">
                                     <fmt:formatNumber value="${item.tom_price}"/>
+                                    <span class="rectangle test_3"></span>
                                 </td>
                                 <td class="text-center" style="word-break:break-all">
                                     <c:out value="${item.next_day_return}"/>%
@@ -137,7 +139,8 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<%--<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>--%>
+<script type="text/javascript" src="assets/Library/http_cdn.datatables.net_1.10.19_js_jquery.dataTables.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#stock').DataTable();
